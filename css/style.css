@@ -1,0 +1,367 @@
+/* style.css */
+/* @font-face {
+    font-family: 'poem';
+    src: url('/font/poem.ttf');
+} */
+
+/* 레아아웃 */
+#wrap {width: 100%; margin: 0 auto;}
+#main {
+    width: 100%; height: 0;
+    background: #adadad;
+    padding-bottom : calc(1624 / 750 * 100%); 
+    /* calc (이미지 높이 ÷ 이미지 가로 × 100 %) */
+    background-image: url('../img/main2.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#calendar {
+    width: 100%; height: 0;
+    background-image: url('../img/cal_bg.png');
+    padding-bottom : calc(1200 / 750 * 100%); 
+    /* calc (이미지 높이 ÷ 이미지 가로 × 100 %) */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#greetings {width: 100%; height: 94vw; background: #F9F9F9;}
+#call {width: 100%; height: 115vw;}
+#album {width: 100%; height: 101vw; background-color: #F9F9F9;}
+#video {width: 100%; height: 101vw; background-color: #F9F9F9;}
+#loction {width: 100%; height: 126vw; background-color: #F9F9F9;}
+#loction-2 {width: 100%; height: 94vw; background-color: #F9F9F9;}
+#contact {width: 100%; height: 60vw; background-color: #F9F9F9;}
+#footer {width: 100%; height: 29vw;}
+
+
+
+/* 메인 */
+#main > .container h1, h2, h3{
+    color: #fff;
+}
+#main h1{
+    font-size: 14vw;
+    line-height: 14vw;
+    /* margin-bottom: 40px; */
+}
+#main hr {
+    margin-top: 40px;
+}
+#main h2{
+    font-size: 8vw;
+    letter-spacing: 4px;
+    margin-top: 40px;
+}
+#main h3{
+    font-size: 4vw; color: #fff;
+}
+#main > .container {
+    text-align: center;
+    position: relative;
+}
+#main > .container > .text {
+    display: block;
+    position: absolute; 
+    top: 50vw;
+    left: 14vw;
+    /* outline: 1px solid red; */
+}
+
+
+/* 달력 */
+#calendar h2 {
+    font-size: 4.8vw;
+    padding-top: 13.3vw;
+    padding-bottom: 1.3vw;
+    font-weight: bold;
+    letter-spacing: 2vw;
+    color: #000;
+}
+#calendar hr {
+    width: 6.6vw;
+    border: solid 0.01px rgb(0, 0, 0); 
+    background-color: #fff;
+}
+#calendar h3 {
+    font-size: 3.73vw;
+    color: #000;
+    padding-top: 1vw;
+    padding-bottom: 11.5vw;
+}
+#calendar .container {
+    text-align: center;
+    position: relative;
+}
+#calendar .cal table {
+    /* outline: 1px solid red; */
+    display: inline-block;
+    text-align: center;
+    font-size: 3vw;
+    width: 90vw;
+    font-weight: bold;
+}
+#calendar .cal table tr.day td {
+    padding-bottom: 2vw;
+    font-weight: bold;
+}
+#calendar .cal table td {
+    width: 20vw; height: 8vw;
+}
+
+
+
+/* 인사말 */
+#greetings {
+    text-align: center;
+}
+#greetings img {
+    width: 10vw; height: 4.6vw;
+    padding-top: 13.3vw;
+    padding-bottom: 3.5vw;
+}
+#greetings .text1 {
+    font-size: 3.2vw;
+    font-family: 'Yeon Sung', cursive;
+    line-height: 8vw;
+    padding-bottom: 6.4vw;
+}
+#greetings .text2 {
+    font-size: 3.7vw;
+    color: #37614B;
+}
+
+
+/* call */
+#call .container {
+    width: 90vw; height: 87.4667vw;
+    margin-top: 13.33vw;
+}
+.groom {
+    width: 90vw; height: 40vw;
+}
+.bride {
+    width: 90vw; height: 40vw;
+    margin-top: 7.3vw;
+}
+.groom .left {
+    width: 37vw;
+    float: left;
+    margin-left: 3vw;
+}
+.groom .right {
+    width: 45vw; 
+    float: right;
+}
+.bride .left {
+    width: 45vw;
+    float: left;
+}
+.bride .right {
+    width: 31vw; 
+    float: right;
+    margin-left: 9vw;
+}
+#call ul {
+    margin-top: 5vw;
+}
+#call ul li:first-child {
+    margin-bottom: 1.6vw;
+    /* outline: 1px solid red; */
+}
+.groom .left ul li img {
+    width: 8vw;
+    margin-left: 18vw;
+}
+.bride .right ul li img {
+    width: 8vw;
+}
+.groom .right img {
+    width: 52vw;
+}
+.bride .left img {
+    width: 52vw;
+}
+#call h2, h3 {color: #000; font-weight: bold;}
+#call h2{ font-size: 3.2vw; letter-spacing: 1vw;}
+#call h3{ font-size: 4.8vw; margin-top: 1vw;}
+#call .line {
+    width: 6.6vw;
+    border: solid 0.01px rgb(0, 0, 0); 
+    background-color: #fff;
+    margin-left: 0vw;
+}
+
+
+
+/* 앨범 */
+#album {
+    text-align: center;
+}
+#album .title img {
+    width: 10vw; height: 4.6vw;
+    padding-top: 10vw;
+    padding-bottom: 3.5vw;
+}
+#album .title h2 {
+    font-size: 4.2vw;
+    font-weight: bold;
+    color: #000;
+    padding-bottom: 6.6667vw;
+}
+
+
+/* 비디오 */
+#video {
+    text-align: center;
+}
+#video .title img {
+    width: 10vw; height: 4.6vw;
+    padding-top: 10vw;
+    padding-bottom: 3.5vw;
+}
+#video .title h2 {
+    font-size: 4.2vw;
+    font-weight: bold;
+    color: #000;
+    padding-bottom: 6.6667vw;
+}
+#video .video {
+    width: 92vw;
+    height: 60.8vw;
+    margin: 0 auto;
+}
+
+/* location */
+#loction {
+    text-align: center;
+}
+#loction .title img {
+    width: 10vw; height: 4.6vw;
+    padding-top: 10vw;
+    padding-bottom: 3.5vw;
+}
+#loction .title h2 {
+    font-size: 4.2vw;
+    font-weight: bold;
+    color: #000;
+    padding-bottom: 6.6667vw;
+}
+#loction .map {
+    width: 91.86vw;
+    height: 60.8vw;
+    margin: 0 auto;
+}
+/* 텍스트 */
+#loction .text {
+    text-align: end;
+    width: 90vw;
+    padding-right: 4vw;
+    padding-top: 9.8667vw;
+    font-size: 3.7333vw;
+    /* outline: 1px solid red; */
+    margin: 0 auto;
+}
+#loction .text p:nth-child(2) {
+    color: #608462;
+}
+
+
+/* location2 */
+#loction-2 .wrap {
+    width: 90vw;
+    margin: 0 auto;
+    padding-top: 10.6667vw;
+}
+#loction-2 .left {
+    width: 36.9333vw; height: 77.33vw;
+    /* background-color: red; */
+    float: left;
+}
+#loction-2 .right {
+    width: 48.2667vw; height: 77.33vw;
+    /* background-color: blue; */
+    float: right;
+}
+#loction-2 .left ul li:nth-child(1) {
+    font-size: 3.733vw;
+    color: #608462;
+}
+#loction-2 .left ul li:nth-child(2) img {
+    width: 6.6667vw;
+}
+#loction-2 .left ul li:nth-child(3) {
+    font-size: 3.2vw;
+    padding-top: 2vw;
+}
+#loction-2 .left ul li:nth-child(4) img {
+    width: 8.8vw;
+    padding-top: 6vw;
+}
+
+
+#loction-2 .right ul li:nth-child(1) {
+    font-size: 3.733vw;
+    color: #608462;
+}
+#loction-2 .right ul li:nth-child(2) {
+    font-size: 3.2vw;
+    padding-top: 2vw;
+}
+#loction-2 .right ul.bottom {
+    padding-top: 6vw;
+}
+
+
+/* contact */
+#contact {
+    text-align: center;
+}
+#contact .title img {
+    width: 10vw; height: 4.6vw;
+    padding-top: 10vw;
+    padding-bottom: 3.5vw;
+}
+#contact .title h2 {
+    font-size: 4.2vw;
+    font-weight: bold;
+    color: #000;
+    padding-bottom: 7vw;
+}
+
+#contact .sns {
+    width: 90vw; height: 15vw;
+    /* background-color: red; */
+    margin: 0 auto;
+}
+#contact .sns div {
+    display: inline-block;
+    margin-right: 10vw;
+}
+#contact .sns div:last-child {
+    margin-right: 0;
+}
+#contact .sns div img {
+    width: 10vw;
+}
+#contact .sns div p {
+    font-size: 3.2vw;
+    font-weight: bold;
+}
+
+
+/* 푸터 */
+#footer div {
+    text-align: center;
+    /* background-color: red; */
+    padding-top: 5vw;
+}
+#footer div p:nth-child(1) {
+    font-size: 3.2vw;
+    color: #7E7E7E;
+}
+#footer div p:nth-child(2) {
+    font-size: 2.93vw;
+    color: #B9B9B9;
+}

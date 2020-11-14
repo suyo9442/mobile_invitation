@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invitation</title>
+
+    <!-- 사용자 CSS -->
+    <link rel="stylesheet" href="./css/reset.css">
+    <!-- <link rel="stylesheet" href="./css/grid.css"> -->
+    <link rel="stylesheet" href="./css/style.css">
+
+    <!-- 폰트 -->
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700;800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Yeon+Sung&display=swap" rel="stylesheet">
+
+    <style>
+    #img-modal {
+     display: none; 
+     position: fixed; 
+     z-index: 20; 
+     padding-top: 100px; 
+     left: 0;
+     top: 0;
+     width: 100%; 
+     height: 100%; 
+     overflow: auto; 
+     background-color: rgb(0,0,0); 
+     background-color: rgba(0,0,0,0.9);
+    }
+    .modal_wrap {
+        /* outline: 1px solid red; */
+        /* margin-top: 17.5vw; */
+    }
+
+    #img-modal img {
+        margin: 0 auto;
+        display: block;
+        width: 70vw;
+    }
+    #img-modal span {
+        margin-left: 65vw;
+        margin-bottom: 5vw;
+        color: #f1f1f1;
+        font-size: 6vw;
+        font-weight: bold;
+    }
+    #img-modal span:hover {
+        color: #bbb;
+        text-decoration: none;
+        cursor: pointer;
+    }
+    article img:hover {
+    opacity: 0.7;
+    }
+    /* 정렬 */
+    #album .top article {
+        display: inline;
+    }
+    #album .top article img {
+        width: 29.7333vw;
+    }
+    #album .bottom article {
+        display: inline;
+    }
+    #album .bottom article img {
+        width: 29.7333vw;
+    }
+    </style>
+</head>
+<body>
+
+    <!-- 사진규격 
+        최소 750 x 1334px -->
+        
+    <div id="wrap">
+        <section id="main">
+            <div class="container">
+                <div class="text">
+                    <h1> 05 </h1>
+                    <h1> 27 </h1>
+                    <hr style="width: 40px; border: solid 0.1px #fff; background-color: #fff;">
+                    <h2>WEDDING DAY</h2>
+                    <h3>YOU ARE INVITED TO <br>
+                        CELEBRATE THE MARRIAGE  </h3>
+                </div>
+            </div>
+        </div>
+
+        <section id="calendar">
+            <div class="container">
+                <h2>MAY</h2>
+                <hr>
+                <h3>2021</h3>
+
+                <div class="cal">
+                    <table>
+                        <tr class="day">
+                            <td style="color: #BE3D2A;">SUN</td>
+                            <td>MON</td>
+                            <td>TUE</td>
+                            <td>WED</td>
+                            <td>TUR</td>
+                            <td>FRI</td>
+                            <td>SAT</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>1</td>
+                            <td>2</td>
+                            <td>3</td>
+                            <td>4</td>
+                            <td>5</td>
+                            <td>6</td>
+                        </tr>
+                        <tr>
+                            <td style="color: #BE3D2A;">7</td>
+                            <td>8</td>
+                            <td>9</td>
+                            <td>10</td>
+                            <td>11</td>
+                            <td>12</td>
+                            <td>13</td>
+                        </tr>
+                        <tr>
+                            <td style="color: #BE3D2A;">14</td>
+                            <td>15</td>
+                            <td>16</td>
+                            <td>17</td>
+                            <td>18</td>
+                            <td>19</td>
+                            <td>20</td>
+                        </tr>
+                        <tr>
+                            <td style="color: #BE3D2A;">21</td>
+                            <td>22</td>
+                            <td>23</td>
+                            <td>24</td>
+                            <td>25</td>
+                            <td>26</td>
+                            <td><p style="width:4.8vw;
+                                height: 4.8vw;
+                                margin-left: 4.6vw;
+                                background-color: #BE3D2A;
+                                border-radius: 50vw;
+                                color: #fff;">27</p></td>
+                        </tr>
+                        <tr>
+                            <td style="color: #BE3D2A;">28</td>
+                            <td>29</td>
+                            <td>30</td>
+                            <td>31</td>
+                        </tr>
+                    </table>
+
+                    <!-- <div class="point">27</div> -->
+                </div>
+            </div>
+        </section>
+
+        <section id="greetings">
+            <div class="container">
+                <img src="img/title.png" alt="title">
+                <p class="text1">
+                    생의 끝날 <br>
+                    당신 손을 잡고 웃음 짓기를. <br>
+                    그 바람 이내 참을 수 없어 청혼합니다. <br>
+                    어여쁜 당신. 나와 결혼합시다. <br>
+                    -법대로 사랑하라, 노승아 - 
+                </p>
+
+                <p class="text2">
+                    저희간 써 나간 소중한 이야기의 맨 앞장을<br>
+                    당신의 축복으로 시작하고 싶습니다.
+                </p>
+
+            </div>
+        </section>
+
+        <section id="call">
+            <div class="container">  
+              <div class="groom">
+                   <div class="left">
+                       <h2>GROOM</h2>
+                       <hr class="line">
+                       <h3>Lee Jun Seo</h3>
+                       <ul>
+                           <li><a href="tel:010-0000-0000"><img src="img/call.png" alt="call"></a></li>
+                           <li><a href="sms:010-0000-0000"><img src="img/mss.png" alt="sms"></a></li>
+                       </ul>
+                   </div>
+                   <div class="right">
+                       <img src="img/groom.png" alt="">
+                   </div>
+               </div> 
+
+                <div class="bride">
+                    <div class="left">
+                        <img src="img/bride.png" alt="">
+                    </div>
+                    <div class="right">
+                        <h2>BRIDE</h2>
+                        <hr class="line">
+                        <h3>Kim Eun Ah</h3>
+                        <ul>
+                            <li><a href="tel:010-0000-0000"><img src="img/call.png" alt="call"></a></li>
+                            <li><a href="sms:010-0000-0000"><img src="img/mss.png" alt="sms"></a></li>
+                        </ul>
+                    </div>
+                </div> 
+            </div>
+        </section>
+
+        <section id="album">
+            <div class="container">
+                <div class="title">
+                    <img src="img/title.png" alt="">
+                    <h2>WEDDING ALBUM</h2>
+                </div>
+                
+                <div class="top">
+                    <article>
+                        <img src="img/ab1.jpg" alt="">
+                    </article>
+                    <article>
+                        <img src="img/ab2.jpg" alt="">
+                    </article>
+                    <article>
+                        <img src="img/ab3.jpg" alt="">
+                    </article>         
+                </div>
+
+                <div class="bottom">
+                   <article>
+                        <img src="img/ab4.jpg" alt="">
+                    </article>
+                    <article>
+                        <img src="img/ab5.jpg" alt="">
+                    </article> 
+                    <article>
+                        <img src="img/ab6.jpg" alt="">
+                    </article> 
+                </div>
+
+                <div id="img-modal">
+                    <div class="modal_wrap">
+                        <span onclick="imgModalClose();">X</span>
+                        <img id="img-modal-content">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <script>
+            /* 이미지 클릭 시 */
+            var imageTagList = document.querySelectorAll('article img');
+            
+            for(var i=0;i<imageTagList.length;i++){
+                imageTagList[i].addEventListener('click',function(){
+                    var modal = document.getElementById('img-modal');
+                    var content = document.getElementById('img-modal-content');
+                    modal.style.display='block';
+                    content.src = this.src;
+                });
+            }
+          
+            /* close 버튼 클릭시*/
+            function imgModalClose(){
+                var modal = document.getElementById('img-modal');
+                var content = document.getElementById('img-modal-content');
+                modal.style.display="none";
+                content.src = '';
+            }
+       </script>
+
+
+        <section id="video">
+            <div class="container">
+                <div class="title">
+                    <img src="img/title.png" alt="title">
+                    <h2>WEDDING ALBUM</h2>
+                </div>
+            </div>
+
+            <div class="video">
+                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/ykX0VpCV7i4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+
+        </section>
+
+        <section id="loction">
+            <div class="container">
+                <div class="title">
+                    <img src="img/title.png" alt="title">
+                    <h2>LOCATION</h2>
+                </div>
+
+                <div class="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d202711.24157380153!2d126.85806641047748!3d37.45214682950288!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca3e304e57f45%3A0x8840213520d5fae7!2z66as7Lig7Lm87Yq87Zi47YWU!5e0!3m2!1sko!2skr!4v1604981168549!5m2!1sko!2skr" width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                </div>
+
+                <div class="text">
+                    <p>2021년 5월 27일 토요일 낮 1시 30분</p>
+                    <p>호텔리츠칼튼 서울</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="loction-2">
+            <div class="container">
+                <div class="wrap">
+                    <div class="left">
+                        <ul>
+                            <li>호텔리츠칼튼 서울</li>
+                            <li><img src="img/location2_line.png" alt=""></li>
+                            <li>서울 강남구 봉은사로 120
+                                (역삼동 602)</li>
+                            <li><a href="tel:02-0000-0000"><img src="img/call.png" alt="call"></a></li>
+                        </ul>
+                    </div>
+                    <div class="right">
+                        <ul class="top">
+                            <li>지하철</li>
+                            <li>[9호선 신논현역] 4번출구 직진 1분 
+                                [2호선 강남역] 강남역 11번출구에서 교보사거리 방향(구:제일생명)으로 도보로 10분, 자동차로 5분
+                                </li>
+                        </ul>
+
+                        <ul class="bottom">
+                            <li>버스</li>
+                            <li>호텔 리츠칼튼 서울 앞 하자(3420)
+                                & 신논혁역 교보타워 사거리 하차 <br>
+                                [지선 (초록)] 3412, 4412 <br> 
+                                [간선 (파랑)] 341, 380, 146, 145 <br>
+                                [광역 (빨강)] 9404, 9408, 9503 <br>
+                                [좌석버스] 5001, 5002, 6800 <br>
+                                [KAL리무진] 3</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <div class="container">
+                <div class="title">
+                    <img src="img/title.png" alt="title">
+                    <h2>CONTACT</h2>
+                </div>
+
+                <div class="sns">
+                    <div>
+                        <a href="#"><img src="img/kakao.png" alt="kakaotalk"></a>
+                        <p>카카오톡</p>
+                    </div>
+                    <div>
+                        <a href="#"><img src="img/facebook.png" alt="facebook"></a>
+                        <p>페이스북</p>
+                    </div>
+                    <div>
+                        <a href="#"><img src="img/insta.png" alt="instagram"></a>
+                        <p>인스타그램</p>
+                    </div>
+                    <div>
+                        <a href="#"><img src="img/twitter.png" alt="twitter"></a>
+                        <p>트위터</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="footer">
+            <div class="container">
+                <div>
+                    <p>FUNKIST WEDDING</p>
+                    <p>Copyright©FUNKIST. All rights Reserved.</p>
+                </div>
+            </div>
+        </section> 
+    </div>
+</body>
+</html>
