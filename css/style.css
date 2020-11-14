@@ -122,8 +122,8 @@
     padding-bottom: 3.5vw;
 }
 #greetings .text1 {
-    font-size: 3.2vw;
-    font-family: 'Yeon Sung', cursive;
+    font-size: 3.5vw;
+    font-family: 'Nanum Brush Script', cursive;
     line-height: 8vw;
     padding-bottom: 6.4vw;
 }
@@ -137,6 +137,7 @@
 #call .container {
     width: 90vw; height: 87.4667vw;
     margin-top: 13.33vw;
+    /* margin: 0 auto; */
 }
 .groom {
     width: 90vw; height: 40vw;
@@ -159,9 +160,9 @@
     float: left;
 }
 .bride .right {
-    width: 31vw; 
+    width: 30vw; 
     float: right;
-    margin-left: 9vw;
+    padding-left: 9vw;
 }
 #call ul {
     margin-top: 5vw;
@@ -178,10 +179,11 @@
     width: 8vw;
 }
 .groom .right img {
-    width: 52vw;
+    width: 52.8vw;
 }
 .bride .left img {
-    width: 52vw;
+    width: 52.8vw;
+    padding-left: 2.2vw;
 }
 #call h2, h3 {color: #000; font-weight: bold;}
 #call h2{ font-size: 3.2vw; letter-spacing: 1vw;}
@@ -258,7 +260,8 @@
     text-align: end;
     width: 90vw;
     padding-right: 4vw;
-    padding-top: 9.8667vw;
+    padding-top: 5vw;
+    margin-left: 3vw;
     font-size: 3.7333vw;
     /* outline: 1px solid red; */
     margin: 0 auto;
